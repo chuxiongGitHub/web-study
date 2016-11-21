@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.css">
+    <script src="../resources/angular-1.5.8/angular.js"></script>
+    <script src="../resources/angular-1.5.8/angular-route.js"></script>
+    <script src="../resources/angular-1.5.8/angular-resource.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body ng-controller="GetController">
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>username</td>
+        <td>createTime</td>
+        <td>age</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="text" ng-model="item.id"></td>
+        <td><input type="text" ng-model="item.userName"></td>
+        <td><input type="text" ng-model="item.createTime"></td>
+        <td><input type="text" ng-model="item.age"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

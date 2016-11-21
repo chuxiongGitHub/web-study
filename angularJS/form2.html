@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.css">
+    <style>
+        .div {
+            width: 100px;
+            margin: 30px auto;
+
+        }
+
+        .error {
+            color: red;
+        }
+
+        input.error {
+            border: 1px solid #a10;
+        }
+
+        /*p.error{*/
+        /*display: none;*/
+        /*}*/
+    </style>
+</head>
+
+<body ng-controller="FormController">
+<div class="div">
+    <div class="container">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2 class="col-sm-offset-5">user</h2>
+                <form name="signUpForm" ng-submit="submitForm()">
+                    <div class="form-group form-inline">
+                        <pre>合法{{signUpForm.userName.$valid}}</pre>
+                        <pre>{{userdata.userName}}</pre>
+                        <label>用户名：</label>
+                        <input type="text" class="form-control"
+                               name="userName"
+                               ng-model="userdata.userName"
+                               ng-minlength="5"
+                               ng-maxlength="10"
+                               required
+                        >
+                        <p class="error" ng-if="signUpForm.userName.$error.required&&signUpForm.userName.$touched">
+                            用户名不能为空</p>
+                        <p class="error"
+                           ng-if="(signUpForm.userName.$error.minlength||signUpForm.userName.maxlength)
+                           &&(signUpForm.userName.$touched)">
+                            用户名的长度应该在5到10位之间</p>
+                    </div>
+                    <div class="form-group form-inline">
+                        <pre>合法{{signUpForm.password.$valid}}</pre>
+                        <pre>{{userdata.password}}</pre>
+                        <label>密码：</label>
+                        <input type="text" class="form-control"
+                               name="password" ng-model="userdata.password"
+                               ng-minlength="6"
+                               ng-maxlength="10"
+                               required
+                        >
+                        <p class="error" ng-if="signUpForm.password.$error.required&&signUpForm.password.$touched">
+                            密码不能为空</p>
+                        <p class="error" ng-if="(signUpForm.password.$error.minlength||signUpForm.password.maxlength)
+                        &&(signUpForm.password.$touched)
+                        ">密码长度应该在6到10位之间</p>
+                    </div>
+                    <div>
+                        <pre>合法{{signUpForm.password2.$valid}}</pre>
+                        <pre>{{password2}}</pre>
+                        <label>确认密码：</label>
+                        <input type="password" class="form-control"
+                               name="password2" ng-model="userdata.password2"
+                               ng-minlength="5"
+                               ng-maxlength="10"
+                               compare="userdata.password"
+                               required
+                        >
+                        <p class="error">两次密码不一致</p>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn-primary btn col-sm-offset-3">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../resources/angular-1.5.8/angular.js"></script>
+<script src="js/form2.js"></script>
+</body>
+</html>
