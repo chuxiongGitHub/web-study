@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/typescript/js/creed.js" />
+        <item url="file://$PROJECT_DIR$/typescript/js/static.js" />
+        <item url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
+        <item url="file://$PROJECT_DIR$/typescript/js/Functions.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/typescript/js/creed.js" />
+      <root url="file://$PROJECT_DIR$/typescript/js/static.js" />
+      <root url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
+      <root url="file://$PROJECT_DIR$/typescript/js/Functions.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
