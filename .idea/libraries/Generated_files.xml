@@ -4,15 +4,17 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/typescript/js/creed.js" />
         <item url="file://$PROJECT_DIR$/typescript/js/static.js" />
-        <item url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
+        <item url="file://$PROJECT_DIR$/typescript/js/Interface.js" />
         <item url="file://$PROJECT_DIR$/typescript/js/Functions.js" />
+        <item url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/typescript/js/creed.js" />
       <root url="file://$PROJECT_DIR$/typescript/js/static.js" />
-      <root url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
+      <root url="file://$PROJECT_DIR$/typescript/js/Interface.js" />
       <root url="file://$PROJECT_DIR$/typescript/js/Functions.js" />
+      <root url="file://$PROJECT_DIR$/typescript/js/accessors.js" />
     </CLASSES>
     <SOURCES />
   </library>
